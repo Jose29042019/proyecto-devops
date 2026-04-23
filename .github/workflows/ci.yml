@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+
+    - name: Instalación
+      run: echo Instalando dependencias
+
+    - name: Compilación
+      run: echo Compilando proyecto
+
+    - name: Pruebas
+      run: echo Ejecutando pruebas
